@@ -72,8 +72,8 @@ body{
      .box1, .box2, .box3, .box4, .box5{
         grid-column: 1;
     }
-/* .container{
+.container{
 grid-template-columns: auto;
 gap: 1rem;
-} */
+}
 }
