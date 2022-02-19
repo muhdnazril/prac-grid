@@ -31,5 +31,6 @@
     display: grid;
     grid-template-columns: auto minmax(300px, 1fr);
     align-self: center;
+    margin: 0 auto;
     width: 70%;
 }
