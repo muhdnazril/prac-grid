@@ -1,12 +1,14 @@
-
+body{
+    background-color: aliceblue;
+}
 .box1, .box2, .box4{
     color: white;
 }
 .box1, .box2{
-    grid-row: 1/2;
+    grid-row: 2/3;
 }
 .box3, .box4{
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 .box1{
     background-color: blueviolet;
@@ -19,18 +21,58 @@
     background-color: white;
 }
 .box4{
-    background-color: black;
+    background-color: rgb(36, 32, 32);
     grid-column: span 2;
 }
 .box5{
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
     grid-column: 4/5;
-    grid-row: span 2;
+    grid-row: 2/4;
+}
+.box1, .box2, .box3, .box4, .box5{
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    align-content: center;
+    line-height: 1.3;
+}
+.imgb1, .imgb2, .imgb3, .imgb4, .imgb5{
+    display: inline-flex;
+    gap: 1.5rem;
+}
+.imgb1 img, .imgb2 img, .imgb3 img, .imgb4 img, .imgb5 img{
+    border-radius: 2rem;
+    border: 3px solid;
+}
+.imgb1 div, .imgb2 div, .imgb3 div, .imgb4 div, .imgb5 div{
+    line-height: 2px;
 }
 .container{
     display: grid;
-    grid-template-columns: auto minmax(300px, 1fr);
-    align-self: center;
-    margin: 0 auto;
+    grid-template-columns: auto minmax(500px, 1fr);
     width: 70%;
+    margin: 0 auto;
+    gap: 2rem;
+}
+@media  screen and (max-width: 550px) {
+    .box1{
+        grid-row: 1/3;
+    }
+    .box2{
+        grid-row: 3/4;
+    }
+    .box4{
+        grid-row: 4/5;
+    }
+    .box4{
+        grid-row: 5/7;
+    }
+    .box5{
+        grid-row: 7/9;
+    }
+     .box1, .box2, .box3, .box4, .box5{
+        grid-column: 1;
+    }
+/* .container{
+
+} */
 }
