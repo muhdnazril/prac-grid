@@ -73,6 +73,7 @@ body{
         grid-column: 1;
     }
 /* .container{
-
+grid-template-columns: auto;
+gap: 1rem;
 } */
 }
